@@ -9,9 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Help2"
+            android:parentActivityName=".take" />
+        <activity android:name=".Help"
+            android:parentActivityName=".del" />
+        <activity
+            android:name=".take"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".del"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".takeaway"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".delivery"
             android:parentActivityName=".MainActivity" />

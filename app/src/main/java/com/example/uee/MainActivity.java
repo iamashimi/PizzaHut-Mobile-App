@@ -23,20 +23,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         d_button.setOnClickListener(this);
         t_button.setOnClickListener(this);
 
-        d_button.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent int1 = new Intent(MainActivity.this,delivery.class);
-                startActivity(int1);
-            }
-        });
-
         t_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int2 = new Intent(MainActivity.this,takeaway.class);
+                Intent int2 = new Intent(MainActivity.this,take.class);
                 startActivity(int2);
+            }
+        });
+
+        d_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int3 = new Intent(MainActivity.this,del.class);
+                startActivity(int3);
             }
         });
     }
