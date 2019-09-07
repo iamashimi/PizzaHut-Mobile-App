@@ -5,15 +5,41 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class take extends AppCompatActivity implements View.OnClickListener{
 
+    EditText LocationEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take);
+
+        LocationEditText = findViewById(R.id.editText2);
+        Button ConformButton = findViewById(R.id.button3);
+        ConformButton.setOnClickListener(this);
+
+        ConformButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String Location = LocationEditText.getText().toString();
+
+                if(Location.length()==0){
+                    LocationEditText.requestFocus();
+                    LocationEditText.setError("PLEASE ENTER THE LOCATION.");
+                }
+
+                else {
+                    Toast.makeText(take.this,"Validation Successful", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+
+
 
         Button help_button = findViewById(R.id.help);
 

@@ -5,17 +5,48 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class del extends AppCompatActivity implements View.OnClickListener{
 
+    EditText StreetAndCityEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_del);
 
         Button help_button = findViewById(R.id.help);
+        Button ConformButton = findViewById(R.id.button3);
+        final EditText HouseNoEditText = findViewById(R.id.editText2);
+        StreetAndCityEditText = findViewById(R.id.editText4);
+
+        ConformButton.setOnClickListener(this);
+
+        ConformButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String HouseNo = HouseNoEditText.getText().toString();
+                final String StreetAndCity = StreetAndCityEditText.getText().toString();
+
+                if(HouseNo.length()==0){
+                    HouseNoEditText.requestFocus();
+                    HouseNoEditText.setError("PLEASE ENTER THE HOUSE NO.");
+                }
+
+                else if(StreetAndCity.length()==0){
+                    StreetAndCityEditText.requestFocus();
+                    StreetAndCityEditText.setError("PLEASE ENTER THE STREET AND CITY.");
+                }
+
+                else {
+                    Toast.makeText(del.this,"Validation Successful", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
         help_button.setOnClickListener(this);
 
@@ -45,6 +76,7 @@ public class del extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()){
             case R.id.imageButton:
                 Toast.makeText(this, "Back", Toast.LENGTH_LONG).show();
