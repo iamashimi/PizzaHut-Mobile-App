@@ -19,9 +19,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toast.makeText( MainActivity.this, "Open pizzaHut App", Toast.LENGTH_SHORT ).show();
         Button d_button = findViewById(R.id.del_button);
         Button t_button = findViewById(R.id.take_button);
+        Button login_button = findViewById( R.id.login_button );
+        Button reg_button = findViewById( R.id.signin_button );
 
         d_button.setOnClickListener(this);
         t_button.setOnClickListener(this);
+        login_button.setOnClickListener( this );
+        reg_button.setOnClickListener( this );
 
         t_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +40,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View v) {
                 Intent int3 = new Intent(MainActivity.this,del.class);
                 startActivity(int3);
+            }
+        });
+
+        login_button.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int4 = new Intent( MainActivity.this,login.class);
+                startActivity( int4 );
+            }
+        });
+        reg_button.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int5 = new Intent( MainActivity.this,registerCustomer.class);
+                startActivity( int5 );
             }
         });
     }
