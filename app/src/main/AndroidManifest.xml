@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OnlinePayment"></activity>
+        <activity android:name=".MainActivityAfterLogin"></activity>
+        <activity android:name=".OnlinePayment" />
         <activity
             android:name=".Help2"
             android:parentActivityName=".take" />
@@ -35,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".editProfile"></activity>
+        <activity android:name=".editProfile" />
         <activity android:name=".profile" />
         <activity android:name=".registerCustomer" />
         <activity android:name=".login" />
