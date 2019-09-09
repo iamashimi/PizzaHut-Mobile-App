@@ -44,9 +44,19 @@ public class Help extends AppCompatActivity implements View.OnClickListener{
                     CnoEditText.setError("PLEASE ENTER THE CONTACT NUMBER.");
                 }
 
+                else if(!ContactNo.matches("[0-9]{10}")){
+                    CnoEditText.requestFocus();
+                    CnoEditText.setError("PLEASE ENTER VALID CONTACT NUMBER.");
+                }
+
                 else if(Email.length()==0){
                     emailEditText.requestFocus();
                     emailEditText.setError("PLEASE ENTER THE EMAIL ADDRESS.");
+                }
+
+                else if(!Email.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")){
+                    emailEditText.requestFocus();
+                    emailEditText.setError("PLEASE ENTER VALID EMAIL ADDRESS.");
                 }
 
                 else if(ResAddress.length()==0){
