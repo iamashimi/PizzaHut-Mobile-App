@@ -205,6 +205,7 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/my_button"
                         android:padding="5dp"
+                        android:textColor="#FFFFFF"
                         android:text="Send" />
 
                     <Button
@@ -216,6 +217,7 @@
                         android:background="@drawable/my_button"
                         android:color="#FF4500"
                         android:padding="5dp"
+                        android:textColor="#FFFFFF"
                         android:text="Cancel" />
 
 

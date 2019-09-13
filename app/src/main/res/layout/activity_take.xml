@@ -125,6 +125,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/my_button"
                     android:padding="5dp"
+                    android:textColor="#FFFFFF"
                     android:text="Confirm" />
 
                 <Button
@@ -133,8 +134,9 @@
                     android:layout_height="50dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/my_button"
+                    android:background="@drawable/my_button3"
                     android:padding="5dp"
+                    android:textColor="#FFFFFF"
                     android:text="Search" />
 
                 <Button
@@ -142,8 +144,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginLeft="30dp"
-                    android:background="@drawable/my_button"
+                    android:background="@drawable/my_button2"
                     android:padding="5dp"
+                    android:textColor="#FFFFFF"
                     android:text="Help" />
 
             </LinearLayout>
