@@ -4,4 +4,10 @@
 
     <string name="title_activity_user_profile">userProfile</string>
     <string name="title_activity_edit_profile">editProfile</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="contact">Contact</string>
+    <string name="email_already_exists">Email already exists</string>
+
 </resources>

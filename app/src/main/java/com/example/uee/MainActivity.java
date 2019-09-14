@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         t_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int2 = new Intent(MainActivity.this,take.class);
+                Intent int2 = new Intent(MainActivity.this,OnlinePayment.class);
                 startActivity(int2);
             }
         });
