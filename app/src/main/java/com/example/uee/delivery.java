@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -18,6 +19,18 @@ public class delivery extends AppCompatActivity implements View.OnClickListener{
         ImageButton back = findViewById(R.id.imageButton);
 
         back.setOnClickListener(this);
+
+        Button selectPizza = findViewById( R.id.button4 );
+
+        selectPizza.setOnClickListener( this );
+
+        selectPizza.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent( getApplicationContext(),SearchPizza.class );
+                startActivity( i );
+            }
+        } );
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

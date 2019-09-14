@@ -15,6 +15,7 @@ public class MainActivityAfterLogin extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_after_login);
+        getSupportActionBar().hide();
 
         Toast.makeText( MainActivityAfterLogin.this, "Open pizzaHut App", Toast.LENGTH_SHORT ).show();
         Button d_button = findViewById(R.id.del_button);

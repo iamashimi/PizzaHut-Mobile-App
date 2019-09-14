@@ -25,6 +25,18 @@ public class del extends AppCompatActivity implements View.OnClickListener{
         StreetAndCityEditText = findViewById(R.id.editText4);
 
         ConformButton.setOnClickListener(this);
+        Button selectPizza = findViewById( R.id.button4 );
+
+        selectPizza.setOnClickListener( this );
+
+        selectPizza.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent( getApplicationContext(),SearchPizza.class );
+                startActivity( i );
+            }
+        } );
+
 
         ConformButton.setOnClickListener(new View.OnClickListener() {
             @Override

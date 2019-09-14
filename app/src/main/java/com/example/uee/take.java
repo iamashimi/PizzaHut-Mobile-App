@@ -20,7 +20,20 @@ public class take extends AppCompatActivity implements View.OnClickListener{
 
         LocationEditText = findViewById(R.id.editText2);
         Button ConformButton = findViewById(R.id.button3);
+
         ConformButton.setOnClickListener(this);
+
+        Button selectPizza = findViewById( R.id.button4 );
+
+        selectPizza.setOnClickListener( this );
+
+        selectPizza.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent( getApplicationContext(),SearchPizza.class );
+                startActivity( i );
+            }
+        } );
 
         ConformButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
-import android.widget.TextView;
+import android.widget.EditText;
 
 import java.util.Calendar;
 
@@ -17,7 +17,7 @@ public class OnlinePayment extends AppCompatActivity {
 
     private static final String TAG = "OnlinePayment";
 
-    private TextView date;
+    private EditText date;
     private DatePickerDialog.OnDateSetListener dateListner;
 
     @Override
@@ -25,7 +25,7 @@ public class OnlinePayment extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_online_payment );
 
-        date = (TextView) findViewById( R.id.date );
+        date = (EditText) findViewById( R.id.date );
         date.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {

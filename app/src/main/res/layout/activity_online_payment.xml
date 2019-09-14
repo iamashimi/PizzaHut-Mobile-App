@@ -5,64 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OnlinePayment"
-    android:background="@drawable/onlinepay">
+    android:background="@drawable/background">
 
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="296dp"
-        android:layout_height="78dp"
+        android:layout_width="293dp"
+        android:layout_height="97dp"
+        android:background="@drawable/background2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2">
+        app:layout_constraintVertical_bias="0.086">
 
         <RadioButton
             android:id="@+id/radioVisa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Visa" />
+            android:text="Visa"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="89dp" />
 
         <RadioButton
             android:id="@+id/radioMaster"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Master" />
-    </RadioGroup>
+            android:layout_height="21dp"
+            android:text="Master"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="121dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Card Type"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.239"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Select Card Type"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.241"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.078" />
+
+    </RadioGroup>
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="295dp"
-        android:layout_height="43dp"
+        android:layout_width="301dp"
+        android:layout_height="49dp"
         android:ems="10"
         android:hint="Card Holder"
         android:inputType="textPersonName"
-        android:textColorHint="#2f2f2f"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
-
+        app:layout_constraintVertical_bias="0.321" />
 
     <EditText
         android:id="@+id/editText9"
@@ -71,13 +78,14 @@
         android:ems="10"
         android:hint="CVV"
         android:inputType="number"
-        android:textColorHint="#2f2f2f"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.577" />
 
     <EditText
         android:id="@+id/editText"
@@ -86,48 +94,42 @@
         android:ems="10"
         android:hint="Card Number"
         android:inputType="number"
-        android:textColorHint="#2f2f2f"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="412dp"
-        android:layout_height="528dp"
-        android:layout_marginTop="464dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizza_hut_footer" />
+        app:layout_constraintVertical_bias="0.418" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="177dp"
         android:layout_height="53dp"
-        android:background="@drawable/my_button"
+        android:background="@drawable/empty_shape"
         android:text="Pay"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/editText9"
+        app:layout_constraintVertical_bias="0.214" />
 
-    <TextView
+    <EditText
         android:id="@+id/date"
-        android:layout_width="284dp"
-        android:layout_height="34dp"
-        android:text="Valid Until"
-        android:textColor="#2f2f2f"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:hint="Valid Until"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editText9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.555" />
 
 </android.support.constraint.ConstraintLayout>

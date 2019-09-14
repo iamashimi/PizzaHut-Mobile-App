@@ -101,4 +101,10 @@
         <item name="android:minWidth">250dp</item>
     </style>
 
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+
+        <item name="android:textColor">#fcf8fa</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
 </resources>

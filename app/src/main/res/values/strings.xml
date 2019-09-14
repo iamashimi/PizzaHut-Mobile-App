@@ -2,6 +2,8 @@
     <string name="app_name">Pizza Hut</string>
     <string name="title_activity_helptake">Helptake</string>
 
+    <string name="search">Search</string>
+
     <string name="title_activity_user_profile">userProfile</string>
     <string name="title_activity_edit_profile">editProfile</string>
     <string name="password">Password</string>

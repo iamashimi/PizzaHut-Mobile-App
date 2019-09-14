@@ -6,17 +6,16 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
         <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/background"
+            android:background="@drawable/background2"
             android:orientation="horizontal"
             tools:ignore="MissingConstraints">
 
@@ -58,7 +57,7 @@
                     android:layout_width="98dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/my_button"
-                    android:text="SignIn"
+                    android:text="Register"
                     android:textColor="#FFFFFF"
                     android:textSize="12sp"
                     tools:layout_editor_absoluteX="229dp"
@@ -98,7 +97,7 @@
                 <Button
                     android:id="@+id/del_button"
                     android:layout_width="150dp"
-                    android:layout_height="100dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/my_button"
                     android:text="Delivery"
                     android:textColor="#FFFFFF"
@@ -120,7 +119,7 @@
                 <Button
                     android:id="@+id/take_button"
                     android:layout_width="150dp"
-                    android:layout_height="100dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/my_button"
                     android:text="Takeaway"
                     android:textColor="#FFFFFF"
@@ -190,6 +189,7 @@
             android:fontFamily="monospace"
             android:text="____Our Most Popular Deals____"
             android:textAlignment="center"
+            android:paddingTop="10dp"
             android:textColor="#070606"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -199,6 +199,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.431" />
 
+
+        <Button
+            android:id="@+id/selectPizza"
+            android:layout_width="147dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="288dp"
+            android:layout_weight="1"
+            android:background="@drawable/empty_shape"
+            android:text="Select Pizza"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout4" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
