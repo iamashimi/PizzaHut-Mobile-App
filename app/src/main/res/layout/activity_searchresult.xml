@@ -7,9 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background">
@@ -23,29 +21,29 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="292dp"
-        android:layout_height="181dp"
+        android:layout_width="287dp"
+        android:layout_height="144dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/cheeselover"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="226dp"
+        android:layout_width="187dp"
         android:layout_height="41dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
         android:text="Rich tomato sauce with a triple layer of Mozarrella Cheese"
         android:textColor="#edf0f2"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="@+id/imageView2" />
 
     <TextView
@@ -57,9 +55,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="76dp"
         android:text="Cheese Lovers"
         android:textColor="#050505"
         android:textSize="18dp"
@@ -112,10 +109,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="242dp"
-        android:layout_marginRight="242dp"
         android:text="Any special instructions"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -127,8 +122,8 @@
 
     <Spinner
         android:id="@+id/spinner_selectcrust"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
         android:layout_alignTop="@+id/textView3"
         android:layout_alignParentStart="true"
         android:layout_marginStart="8dp"
@@ -141,14 +136,13 @@
 
     <Spinner
         android:id="@+id/spinner_selectsize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
         android:layout_alignTop="@+id/textView3"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:background="@drawable/buttondropdownnormal"
         android:entries="@array/size"
         android:popupBackground="@drawable/spinnerbg"
@@ -246,9 +240,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
-        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#2ece02"
         android:text="Pay Now"
         android:textColor="#f6f7f9"
@@ -257,7 +251,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
         android:id="@+id/checkBox"

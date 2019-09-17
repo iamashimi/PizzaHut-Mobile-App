@@ -25,7 +25,7 @@ public class del extends AppCompatActivity implements View.OnClickListener{
         StreetAndCityEditText = findViewById(R.id.editText4);
 
         ConformButton.setOnClickListener(this);
-        Button selectPizza = findViewById( R.id.button4 );
+        Button selectPizza = findViewById( R.id.button3 );
 
         selectPizza.setOnClickListener( this );
 
@@ -56,6 +56,8 @@ public class del extends AppCompatActivity implements View.OnClickListener{
 
                 else {
                     Toast.makeText(del.this,"Validation Successful", Toast.LENGTH_LONG).show();
+                    Intent i = new Intent( getApplicationContext(),SearchPizza.class );
+                    startActivity( i );
                 }
             }
         });

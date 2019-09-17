@@ -11,5 +11,7 @@
     <string name="email">Email</string>
     <string name="contact">Contact</string>
     <string name="email_already_exists">Email already exists</string>
+    <string name="card_invalid">Invalid Card Number</string>
+    <string name="cvv_invalid">Invalid CVV Number</string>
 
 </resources>

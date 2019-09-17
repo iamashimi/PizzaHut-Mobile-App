@@ -118,7 +118,7 @@
 
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/confirm"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginLeft="30dp"
@@ -128,16 +128,6 @@
                     android:textColor="#FFFFFF"
                     android:text="Confirm" />
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/my_button3"
-                    android:padding="5dp"
-                    android:textColor="#FFFFFF"
-                    android:text="Search" />
 
                 <Button
                     android:id="@+id/help"

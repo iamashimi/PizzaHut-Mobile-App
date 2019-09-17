@@ -10,7 +10,7 @@
 
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/card_holder"
         android:layout_width="295dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.37" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/card_num"
         android:layout_width="295dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -55,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/card_num" />
 
     <Button
         android:id="@+id/pay"

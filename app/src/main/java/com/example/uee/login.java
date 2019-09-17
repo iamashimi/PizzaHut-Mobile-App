@@ -45,7 +45,7 @@ public class login extends AppCompatActivity {
                 else if(!email.matches( "[a-zA-z0-9._-]+@[a-z]+.[a-z]+" )){
                     email_field.requestFocus();
                     email_field.setError( "Enter a valid email" );
-                }else if(email.contains( "test@sample.com" )&& password.contains( "123" )){
+                }else if(email.contains( "test@example.com" )&& password.contains( "123" )){
                     Intent login = new Intent( getApplicationContext(),MainActivityAfterLogin.class );
                     startActivity( login );
                 }

@@ -19,11 +19,11 @@ public class take extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_take);
 
         LocationEditText = findViewById(R.id.editText2);
-        Button ConformButton = findViewById(R.id.button3);
+        Button ConformButton = findViewById(R.id.confirm);
 
         ConformButton.setOnClickListener(this);
 
-        Button selectPizza = findViewById( R.id.button4 );
+        Button selectPizza = findViewById( R.id.confirm );
 
         selectPizza.setOnClickListener( this );
 
@@ -47,6 +47,8 @@ public class take extends AppCompatActivity implements View.OnClickListener{
 
                 else {
                     Toast.makeText(take.this,"Validation Successful", Toast.LENGTH_LONG).show();
+                    Intent i = new Intent( getApplicationContext(),SearchPizza.class );
+                    startActivity( i );
                 }
             }
         });
